@@ -1,0 +1,62 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Garagem Interativa</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Minha Garagem</h1>
+    </header>
+
+    <main>
+        <section id="selecao-veiculo">
+            <h2>Escolha seu veículo:</h2>
+            <div class="veiculos">
+                <img src="img/carro_normal.webp" alt="Carro Normal" data-veiculo="normal">
+                <img src="img/carro_esportivo.jpeg" alt="Carro Esportivo" data-veiculo="esportivo">
+                <img src="img/caminhao.webp" alt="Caminhão" data-veiculo="caminhao">
+            </div>
+        </section>
+
+        <section id="velocimetro">
+            <h2>Velocímetro:</h2>
+            <div id="velocimetro-display">0 km/h</div>
+        </section>
+
+        <section id="carga" style="display: none;">
+            <h2>Carga do Caminhão:</h2>
+            <div id="carga-display">0 kg</div>
+        </section>
+    </main>
+
+        <section id="controles">
+            <h2>Controles:</h2>
+            <div id="botoes">
+                <button id="ligar">Ligar</button>
+                <button id="acelerar">Acelerar</button>
+                <button id="frear">Frear</button>
+                <button id="buzinar">Buzinar</button>
+                <button id="desligar">Desligar</button>
+                <button id="turbo" style="display: none;">Turbo</button>
+                <button id="carregar" style="display: none;">Carregar</button>
+                <button id="descarregar" style="display: none;">Descarregar</button>
+            </div>
+            <p id="status">Veículo desligado.</p>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© 2024 Garagem Interativa</p>
+    </footer>
+
+    <audio id="audio-buzina-carro" src="audio/buzina_carro.mp3" preload="auto"></audio>
+    <audio id="audio-buzina-caminhao" src="audio/buzina_caminhao.mp3" preload="auto"></audio>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
